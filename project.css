@@ -64,28 +64,30 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: #221914;
 }
 
 .flex-container div{
     width: 100%;
     height: auto;
     margin: 20px;
-    padding-right: 100px;
+    padding-right: 200px;
     
 }
 
 img{
-    width: 110%;
-    padding-top: 50px;
-    float: both;
+    max-height: fit-content;
+    width: 945px;
+    object-fit:cover;
+    vertical-align: bottom;
 }
 
 .video{
     width: 100px;
-    padding: 50px;
+    padding-left: 350px;
+    padding-top: 100px;
     position: absolute;
-    z-index: 300000;
-    align-items: center;
+    float: right;
 }
 
 .btn {
@@ -122,4 +124,48 @@ h3 {
     color: white;
     font-size: 50px;
     margin: 20px 0px 20px;
+}
+
+
+#contact-me {
+    width: 100%;
+    height: 360px;
+    background: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+#contact-me p {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 2px;
+    margin-bottom: 0.5px;
+}
+
+input[type=text],
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: steelblue;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: steelblue;
+    cursor: pointer;
 }
